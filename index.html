@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Expense Tracker</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- jsPDF and AutoTable -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.5.28/jspdf.plugin.autotable.min.js"></script>
+</head>
+<body>
+
+  <header>
+    <h1>FinTrack-Track Your Way to Financial Freedom</h1>
+    <h1>Expense Tracker</h1>
+  </header>
+
+  <div class="container">
+    <div class="input-container">
+      <label for="month">Month</label>
+      <input type="month" id="month" />
+    </div>
+
+    <div class="input-container">
+      <label for="transaction-type">Transaction Type</label>
+      <select id="transaction-type" required>
+        <option value="" disabled selected>Select Transaction Type</option>
+        <option value="income">Income</option>
+        <option value="expense">Expense</option>
+      </select>
+    </div>
+
+    <div class="input-container">
+      <label for="amount">Amount</label>
+      <input type="number" id="amount" placeholder="Enter amount" required />
+    </div>
+
+    <div class="input-container">
+      <label for="description">Description</label>
+      <input type="text" id="description" placeholder="Enter description" required />
+    </div>
+
+    <div class="input-container" id="category-container">
+      <label for="category">Category</label>
+      <select id="category" required>
+        <option value="food">Food</option>
+        <option value="transport">Transport</option>
+        <option value="entertainment">Entertainment</option>
+        <option value="other">Other</option>
+      </select>
+    </div>
+
+    <div class="button-container">
+      <button onclick="addTransaction()">Add Transaction</button>
+      <button onclick="resetTracker()">Reset Data</button>
+    </div>
+
+    <table id="transactions-table">
+      <thead>
+        <tr>
+          <th>Description</th>
+          <th>Amount</th>
+          <th>Type</th>
+          <th>Category</th>
+          <th>Month</th>
+        </tr>
+      </thead>
+      <tbody>
+      </tbody>
+    </table>
+
+    <div class="summary-container">
+      <div class="summary-item">
+        <strong>Total Income:</strong> ₹<span id="total-income">0.00</span>
+      </div>
+      <div class="summary-item">
+        <strong>Total Expense:</strong> ₹<span id="total-expense">0.00</span>
+      </div>
+      <div class="summary-item" id="net-balance-box">
+        <strong>Net Balance:</strong> ₹<span id="net-balance">0.00</span>
+      </div>
+    </div>
+    
+      
+    </div>
+
+    <div class="button-container">
+      <button class="pdf-button" onclick="generatePDF()">Export to PDF</button>
+    </div>
+  </div>
+
+  <footer>
+    <p>Made With Love By Rohan Verma<br>&copy; 2025 FinTrack   All rights reserved.</p>
+  </footer>
+  
+  
+
+  <script src="script.js"></script>
+</body>
+</html>
