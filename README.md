@@ -33,7 +33,7 @@ Expense Tracker Web App
 
 ---
 
-> 🔗 **Live Demo:** https://rohanverma1308.github.io/FinTrack/
+> 🔗 **Live Demo:** [https://rohanverma1308.github.io/FinTrack/](https://rohanverma1308.github.io/Fintrack/)
 
 ---
 
