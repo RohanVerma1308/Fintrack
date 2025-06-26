@@ -50,15 +50,20 @@ This project was developed in my **1st-year BTech CSE (AI & DS)** . It's aimed a
 
 ---
 
-## 🤝 Contributing
+### 🤝 Contributing
 
-Pull requests are welcome! If you’d like to improve the UI, add features, or fix bugs, feel free to fork the repo and submit a PR.
+Fintrack is a personal project developed as part of my learning and skill-building journey. The project and its source code are my intellectual property and intended primarily for demonstration and personal use.
 
----
+That said, if you are genuinely interested in collaborating, suggesting updates, or contributing in a respectful manner:
 
-## 📄 License
+✅ You may **reach out to me directly** to discuss improvements or ideas  
+✅ You can **fork the repository** for your own learning purposes, provided you respect the licensing terms  
 
-This project is licensed under the [MIT License](LICENSE).
+**Please Note:**  
+- Unauthorized redistribution or commercial use of this project is **strictly prohibited**  
+- Contributions that align with the project's purpose and learning spirit are always welcome through proper communication  
+
+Thank you for respecting the boundaries of this personal project!
 
 ---
 
@@ -68,5 +73,17 @@ This project is licensed under the [MIT License](LICENSE).
 * jsPDF for PDF export
 * GitHub Pages for deployment
 
+---
+
+## 📄 License
+
+```
+© 2025 Rohan Verma. All rights reserved.
+
+This project and its source code are the intellectual property of Rohan Verma. Unauthorized copying, modification, redistribution, or commercial use is strictly prohibited.
+
+The Fintrack application is intended for demonstration and educational purposes only. For permissions related to usage, collaboration, or other inquiries, please contact the author directly.
+
+```
 ---
 
